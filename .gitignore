@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+mygitkey
+mygitkey.pub
 
 
 # local env files
