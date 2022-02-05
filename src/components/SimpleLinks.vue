@@ -1,9 +1,9 @@
 <template>
   <section class="links">
     <div class="links__wrap">
-      <a class="" href="">Telegram</a>
-      <a class="" href="">WhatsApp</a>
-      <a class="" href="mailto:v.borozdina@gmail.com">Email</a>
+      <a class="links__item" href="https://t.me/greencity_archer">Telegram</a>
+      <a class="links__item" href="https://api.whatsapp.com/send?phone=79851213423&text=">WhatsApp</a>
+      <a class="links__item" href="mailto:v.borozdina@gmail.com">Email</a>
     </div>
 
   </section>
@@ -27,11 +27,15 @@ a{
   margin-bottom: 20px;
   color: black;
   border: 1px solid black;
-  transition: 0.3 all;
-  &:hover{
+  transition: 0.3s all;
+  text-decoration: none;
+  &:hover, &:active{
     background-color: black;
     color:white;
-    border: 1pxp solid blue;
+    border: 1px solid black;
+  }
+  &:focus-visible{
+  border-radius: 0;
   }
 }
 </style>
