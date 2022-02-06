@@ -38,4 +38,8 @@ a{
   border-radius: 0;
   }
 }
+.links-wrap{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 </style>
