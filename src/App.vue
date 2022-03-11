@@ -27,11 +27,41 @@
         <SimpleLinks/>
       </div>
     </section>
-    <!--
+<!--
     <section>
       <img class="upper-divider-2" alt="decorative-element" src="./assets/updivider2.svg">
     </section>
+    <section>
+      <div class="container">
+        <h2 v-text="$ml.get('h2about')"></h2>
+        <h3 v-text="$ml.get('h3about')"></h3>
+        <p class="description" v-text="$ml.get('paboutbuttons')"></p>
+        <p class="description" v-text="$ml.get('buttonssamples')"></p>
+        <div class="decorative-links">
+          <button class="decorative-link decorative-link--top" v-text="$ml.get('btn1')"></button>
+          <button class="decorative-link" v-text="$ml.get('btn2')"></button>
+          <button class="decorative-link" v-text="$ml.get('btn3')"></button>
+          <button class="decorative-link decorative-link--bottom" v-text="$ml.get('btn4')"></button>
+        </div>
+
+        <h3 v-text="$ml.get('h3content')"></h3>
+        <p class="description" v-text="$ml.get('paboutcontent')"></p>
+        <ul class=simple-list>
+          <li class="simple-list-item" v-text="$ml.get('liprice')"></li>
+          <li class="simple-list-item" v-text="$ml.get('lihours')"></li>
+          <li class="simple-list-item" v-text="$ml.get('lifoto')"></li>
+          <li class="simple-list-item" v-text="$ml.get('livideo')"></li>
+          <li class="simple-list-item" v-text="$ml.get('lilongread')"></li>
+          <li class="simple-list-item" v-text="$ml.get('licalc')"></li>
+          <li class="simple-list-item" v-text="$ml.get('limap')"></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <img class="figure-bottom" alt="decorative-element" src="./assets/figurebottom.svg">
+    </section>
     -->
+
 
 
 
@@ -84,8 +114,13 @@ export default {
   color: #594C3F;
 
   h2{
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 30px;
+  }
+  h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
   }
   .first-screen{
     background-color: #E5E5E5;
@@ -135,6 +170,43 @@ export default {
   height: 205px;
   margin: 0 auto;
 }
+.decorative-links{
+  margin-bottom: 50px;
+}
+.decorative-link{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  background-color: #A3B5B5;
+  color: #ffffff;
+  transition: 0.3s all;
+  text-decoration: none;
+  cursor: pointer;
+  outline-color: #A3B5B5;
+  border: none;
+  border-radius: 26px;
+  &:hover, &:active{
+    box-shadow: 4px 4px 8px 0 rgba(163, 181, 181, 0.5);
+  }
+
+  &--top{
+    border-radius: 0 26px 26px 26px;
+  }
+  &--bottom{
+    border-radius: 26px 26px 0 26px;
+  }
+}
+.simple-list{
+  text-align: left;
+  padding: 10px;
+  margin-top: 0px;
+}
+.description{
+  text-align: left;
+}
+
 
 
 

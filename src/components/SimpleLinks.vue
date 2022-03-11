@@ -1,7 +1,7 @@
 <template>
   <section class="links">
     <div class="links__wrap">
-      <a class="links__item" href="https://t.me/greencity_archer">Telegram</a>
+      <a class="links__item" href="https://t.me/enamorada_del_mar">Telegram</a>
       <a class="links__item" href="https://api.whatsapp.com/send?phone=79851213423&text=">WhatsApp</a>
       <a class="links__item" href="mailto:v.borozdina@gmail.com">Email</a>
     </div>
